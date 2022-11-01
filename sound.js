@@ -8,13 +8,15 @@ const sixthAudio = document.getElementById("audio6");
 let startButton = document.getElementById("play");
 var background = document.getElementById("background");
 
+const button = document.querySelector(".play-btn");
+const click = document.querySelector(".title3");
+
 startButton.addEventListener("click", ()=>{
     firstAudio.play();
     currAudio = firstAudio
     background.style.webkitFilter = "blur(0px)";
     console.log(background.style.webkitFilter);
     startButton.style.display = "none";
-    click.style.display = "none";
     console.log("HI");
 })
 
@@ -63,8 +65,7 @@ fifthAudio.addEventListener("ended", ()=>{
 })
 
 
-const button = document.querySelector(".play-btn");
-const click = document.querySelector(".title3");
+
 
 button.addEventListener("click",()=>{
     button.style.display = "none";
