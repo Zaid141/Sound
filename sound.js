@@ -17,7 +17,6 @@ startButton.addEventListener("click", ()=>{
     background.style.webkitFilter = "blur(0px)";
     console.log(background.style.webkitFilter);
     startButton.style.display = "none";
-    click.style.display = "none";
     console.log("HI");
 })
 
@@ -25,10 +24,6 @@ background.addEventListener("click", ()=>{
     if(!currAudio.paused){
         currAudio.pause();
         startButton.style.display = "block";
-        if(startButton.style.display = "block"){
-             click.style.display = "block"
-        }
-       
         background.style.webkitFilter = "blur(8px)";
     }
 })
