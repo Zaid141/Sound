@@ -57,6 +57,16 @@
     font-size: 23px;
 }
 
+.title3{
+  color: whitesmoke;
+  position: absolute;
+  top: 59%;
+  left: 36%;
+  font-family: 'Carter One', cursive;
+  font-size: 40px;
+  background-color: transparent;
+  text-shadow: 10px 5px 8px rgba(255, 0, 128, 0.8);
+}
 
 .play-btn {
     width: 100px;
