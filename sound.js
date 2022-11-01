@@ -68,10 +68,10 @@ fifthAudio.addEventListener("ended", ()=>{
 
 
 
-button.addEventListener("click",()=>{
-    button.style.display = "none";
-    if(button.style.display = "none"){
-        click.style.display = "none"
-    }
-})
+// button.addEventListener("click",()=>{
+//     button.style.display = "none";
+//     if(button.style.display = "none"){
+//         click.style.display = "none"
+//     }
+// })
 
