@@ -10,7 +10,7 @@ var background = document.getElementById("background");
 
 startButton.addEventListener("click", ()=>{
     firstAudio.play();
-    background.style.filter = none;
+    background.style.webkitFilter = none;
     startButton.style.display = none;
     console.log("HI");
 })
