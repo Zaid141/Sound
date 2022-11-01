@@ -13,14 +13,14 @@ startButton.addEventListener("click", ()=>{
     currAudio = firstAudio
     background.style.webkitFilter = "blur(0px)";
     console.log(background.style.webkitFilter);
-    startButton.style.display = none;
+    startButton.style.display = "none";
     console.log("HI");
 })
 
 background.addEventListener("click", ()=>{
     if(!currAudio.paused){
         currAudio.pause();
-        startButton.style.display = block;
+        startButton.style.display = "block";
         background.style.webkitFilter = "blur(8px)";
     }
 })
