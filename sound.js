@@ -21,6 +21,7 @@ background.addEventListener("click", ()=>{
     if(!currAudio.paused){
         currAudio.pause();
         startButton.style.display = "block";
+        click.style.display = "block"
         background.style.webkitFilter = "blur(8px)";
     }
 })
