@@ -17,6 +17,7 @@ startButton.addEventListener("click", ()=>{
     background.style.webkitFilter = "blur(0px)";
     console.log(background.style.webkitFilter);
     startButton.style.display = "none";
+    click.style.display = "none";
     console.log("HI");
 })
 
