@@ -9,8 +9,8 @@ let startButton = document.getElementById("play");
 var background = document.getElementById("background");
 
 startButton.addEventListener("click", ()=>{
-    currAudio = firstAudio;
-    currAudio.play();
+    firstAudio.play();
+    currAudio = firstAudio
     background.style.webkitFilter = "blur(0px)";
     console.log(background.style.webkitFilter);
     startButton.style.display = none;
@@ -27,31 +27,36 @@ background.addEventListener("click", ()=>{
 
 firstAudio.addEventListener("ended", ()=>{
     background.style.backgroundImage = "url(airport.png)"
-    secondAudio.play();
+    currAudio = secondAudio
+    currAudio.play();
     console.log("Sec");
 })
 
 secondAudio.addEventListener("ended", ()=>{
     background.style.backgroundImage = "url(safari.png)"
-    thirdAudio.play();
+    currAudio = thirdAudio
+    currAudio.play();
     console.log("third");
 })
 
 thirdAudio.addEventListener("ended", ()=>{
     background.style.backgroundImage = "url(AD1.png)"
-    fourthAudio.play();
+    currAudio = fourthAudio
+    currAudio.play();
     console.log("4");
 })
 
 fourthAudio.addEventListener("ended", ()=>{
     background.style.backgroundImage = "url(safari.png)"
-    fifthAudio.play();
+    currAudio = fifthAudio
+    currAudio.play();
     console.log("5");
 })
 
 fifthAudio.addEventListener("ended", ()=>{
     background.style.backgroundImage = "url(studio.png)"
-    sixthAudio.play();
+    currAudio = sixthAudio
+    currAudio.play();
     console.log("6");
 })
 
