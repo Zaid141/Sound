@@ -9,12 +9,21 @@ let startButton = document.getElementById("play");
 var background = document.getElementById("background");
 
 startButton.addEventListener("click", ()=>{
-    firstAudio.play();
+    currAudio = firstAudio;
+    currAudio.play();
     background.style.webkitFilter = "blur(0px)";
     console.log(background.style.webkitFilter);
     startButton.style.display = none;
     console.log("HI");
 })
+
+background.addEventListener("click", ()=>{
+    if(!currAudio.paused){
+        currAudio.pause();
+        startButton.style.display = block;
+        background.style.webkitFilter = "blur(8px)";
+    }
+}
 
 firstAudio.addEventListener("ended", ()=>{
     background.style.backgroundImage = "url(airport.png)"
