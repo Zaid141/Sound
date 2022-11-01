@@ -11,6 +11,7 @@ var background = document.getElementById("background");
 startButton.addEventListener("click", ()=>{
     firstAudio.play();
     background.style.webkitFilter = none;
+    console.log(background.style.webkitFilter);
     startButton.style.display = none;
     console.log("HI");
 })
