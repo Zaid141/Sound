@@ -60,9 +60,14 @@ fifthAudio.addEventListener("ended", ()=>{
     console.log("6");
 })
 
+
 const button = document.querySelector(".play-btn");
+const click = document.querySelector(".title3");
 
 button.addEventListener("click",()=>{
     button.style.display = "none";
+    if(button.style.display = "none"){
+        click.style.display = "none"
+    }
 });
 
