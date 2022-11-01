@@ -23,7 +23,7 @@ background.addEventListener("click", ()=>{
         startButton.style.display = block;
         background.style.webkitFilter = "blur(8px)";
     }
-}
+})
 
 firstAudio.addEventListener("ended", ()=>{
     background.style.backgroundImage = "url(airport.png)"
